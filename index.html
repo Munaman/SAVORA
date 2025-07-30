@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAVORA</title>
-  <link rel="icon" href="img/favicon_022120.ico" type="image/x-icon">
+  <title>PLATERA</title>
+  <link rel="icon" href="img/favicon1.png" type="image/x-icon">
   <link href="output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -12,7 +12,7 @@
 <body class="">
     <header class="relative h-screen bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg');">
         <div class="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-white text-center p-6">
-            <h1 class="text-5xl md:text-6xl font-bold mb-4 text-red-500">Savora</h1>
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 text-red-500">PLATERA</h1>
             <p class="text-xl md:text-2xl mb-6 italic ">Taste the Experience</p>
             <a href="#menu" class="bg-red-500 hover:bg-red-600 px-6 py-3 rounded-full text-white text-lg font-semibold">View Menu</a>
         </div>
@@ -23,10 +23,10 @@
         <div class="flex flex-col  md:flex-row md:gap-40 ">
             <div class="p-10 w-full md:w-1/2 flex flex-col justify-center ">
                 <h2 class="text-3xl text-red-500 font-bold md:text-3xl pb-3">About Us</h2>
-                <p class="text-sm md:text-lg ">Savora is a modern dining experience where global flavors meet timeless hospitality. From artisanal starters to decadent desserts, every dish is made with passion and served with style.</p>
+                <p class="text-sm md:text-lg ">PLATERA is a modern dining experience where global flavors meet timeless hospitality. From artisanal starters to decadent desserts, every dish is made with passion and served with style.</p>
             </div>
             <div class="w-full h-full  md:w-1/2 ">
-                <img src="img/Logo.png" class="rounded-xl" alt="Savora Logo" data-aos="fade-right" data-aos-duration="1000">
+                <img src="img/Logo.png" class="rounded-xl" alt="PLATERA Logo" data-aos="fade-right" data-aos-duration="1000">
             </div>
         </div>
       </section>
@@ -329,7 +329,7 @@
               <div id="carousel-track" class="flex md:gap-5 transition-transform duration-500 ease-in-out">
                 <div class="flex-none w-full lg:w-1/3 box-border">
                   <div class="bg-white rounded-lg shadow-lg p-8">
-                    <p class="text-lg text-gray-600 italic mb-4">"The flavors were incredible! Every bite was a delight. SAVORA is my new favorite spot."</p>
+                    <p class="text-lg text-gray-600 italic mb-4">"The flavors were incredible! Every bite was a delight. PLATERA is my new favorite spot."</p>
                     <div class="flex items-center">
                       <img src="img/testimonians/7.png" alt="Client" class="w-12 h-12 rounded-full mr-4">
                       <div>
@@ -353,7 +353,7 @@
                 </div>
                 <div class="flex-none w-full lg:w-1/3 box-border">
                   <div class="bg-white rounded-lg shadow-lg p-8">
-                    <p class="text-lg text-gray-600 italic mb-4">"SAVORA brings fine dining to a whole new level. I loved the ambience and presentation"</p>
+                    <p class="text-lg text-gray-600 italic mb-4">"PLATERA brings fine dining to a whole new level. I loved the ambience and presentation"</p>
                     <div class="flex items-center">
                       <img src="img/testimonians/1.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
                       <div>
@@ -531,13 +531,16 @@
         </div>
 
         <div class="flex justify-center text-white mt-5 md:text-lg">
-            <p>&copy 2025 <a href="https://munawebs.netlify.app" target="_blank" class="font-bold">MunaWebs</a>. All Right Reserved</p>
+            <p>&copy <span id="year"></span> <a href="https://munawebs.netlify.app" target="_blank" class="font-bold">MunaWebs</a>. All Rights Reserved</p>
         </div>
     </section>
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 <script>
+    //Footer Year JS
+    document.getElementById('year').textContent = new Date().getFullYear();
+
         document.addEventListener("DOMContentLoaded", function() {
             AOS.init();
         });
@@ -684,7 +687,7 @@
                 // alert("Incorrect Table Number. Please pick a number from 1 - 40")
                 reservationModal.classList.remove('hidden');
                 // modalP.style.color = "red"
-                modalP.innerText = "Invalid Entry"
+                modalP.innerText = "Please fill in the table correctly"
             }
         }
         //Reservations Booking JS

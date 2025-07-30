@@ -1,2 +1,0 @@
-# SAVORA
-Restaurant project
